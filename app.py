@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request
-# import pickle
 import joblib
 import numpy as np
 model = joblib.load("model/model1.pkl")
-# model = pickle.load(open('model/model_weight_prediction.pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')
